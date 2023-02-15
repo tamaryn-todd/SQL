@@ -23,9 +23,9 @@ SELECT * FROM store
 ORDER BY price desc; 
 
 --what is the avg price of items in the bulk section? 
-SELECT AVG(price) "avg gin-based cocktail price"
+SELECT AVG(price) "avg rum-based cocktail price"
 FROM store
-where key_spirit='gin'; 
+where key_spirit='rum'; 
 
 --what are the 5 most popular cocktails? 
 SELECT cocktail, price, popularity
