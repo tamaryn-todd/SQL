@@ -1,4 +1,5 @@
 # Tamaryn Todd's SQL Portfolio
 
 ## Welcome to my SQL portfolio 
-### This code repository contains examples of SQL I've written. Feel free to take a look and reach out if you have any questions.
+### This code repository showcases various SQL examples I've created. 
+### Feel free to explore and contact me if you have any questions.
