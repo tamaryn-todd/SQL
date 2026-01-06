@@ -35,15 +35,17 @@ FROM superstore
 ORDER BY price desc;
 
 #Show a statistic about the item prices.
-SELECT avg(price)
+SELECT AVG(average_rating)
 FROM superstore;
 
 #Show a statistic about the price for items in the category of "Kitchen Supplies".
-SELECT AVG(price), category
+SELECT category, MAX(price)
 FROM superstore
 WHERE category = 'Kitchen Supplies';
 
 #Come up with your own question about the data and answer it using SQL.
-SELECT item_name, stock_quantity
+-- which category of goods has the highest average rating?
+SELECT category, average_rating
 FROM superstore
-WHERE item_name = 'Robot Vacuum Cleaner';
+GROUP BY category
+ORDER BY average_rating desc;
